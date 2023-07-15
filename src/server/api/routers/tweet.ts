@@ -29,7 +29,7 @@ export const tweetRouter = createTRPCRouter({
       }
     })
     let nextCursor: typeof cursor | undefined
-    if (DataTransfer.length > limit) {
+    if (data.length > limit) {
       const nextItem = data.pop()
       if (nextItem != null) {
 
